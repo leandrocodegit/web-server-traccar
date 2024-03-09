@@ -41,7 +41,7 @@ class AuthController extends Controller
 
         if (!auth()->validate($credentials))
             return response()->json(['error' => 'Unauthorized'], 401);
- 
+
         return response()->json(['error' => 'Unauthorized'], 401);
     }
 
