@@ -251,32 +251,6 @@
     <style>
         @import"https://fonts.googleapis.com/css2?family=Montserrat&family=REM:wght@300&display=swap";
         @import"https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap";
-
-        .mat-typography {
-            font: 400 14px/20px Roboto, Helvetica Neue, sans-serif;
-            letter-spacing: normal
-        }
-
-        html,
-        body {
-            font-family: Montserrat, sans-serif;
-            height: 100%;
-            width: 100%;
-            background: #fdfdfd;
-            margin: 0;
-            padding: 0
-        }
-
-        html,
-        body {
-            height: 100%
-        }
-
-        body {
-            margin: 0;
-            font-family: Roboto, Helvetica Neue, sans-serif
-        }
-
         @charset "UTF-8";
 
         :root {
@@ -432,22 +406,46 @@
             --bs-breakpoint-xl: 1200px;
             --bs-breakpoint-xxl: 1400px
         }
+
+        .mat-typography {
+            font: 400 14px/20px Roboto, Helvetica Neue, sans-serif;
+            letter-spacing: normal
+        }
+
+        html,
+        body {
+            font-family: Montserrat, sans-serif;
+            height: 100%;
+            width: 100%;
+            background: #fdfdfd;
+            margin: 0;
+            padding: 0
+        }
+
+        html,
+        body {
+            height: 100%
+        }
+
+        body {
+            margin: 0;
+            font-family: Roboto, Helvetica Neue, sans-serif
+        }
     </style>
-    <link rel="stylesheet" href="styles.b0496a49c504eaef.css" media="print" onload="this.media='all'"><noscript>
-        <link rel="stylesheet" href="styles.b0496a49c504eaef.css">
+    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'"><noscript>
+        <link rel="stylesheet" href="styles.css">
     </noscript>
 </head>
 
 <body class="mat-typography">
     <app-root></app-root>
-    <script src="runtime.3f6f6f7e183c1074.js" type="module"></script>
-    <script src="polyfills.0f6c8438d436c87c.js" type="module"></script>
-    <script src="scripts.826b2f1bd12195fb.js" defer></script>
-    <script src="main.9fa3691ccbb752d6.js" type="module"></script>
+    <script src="runtime.js" type="module"></script>
+    <script src="polyfills.js" type="module"></script>
+    <script src="scripts.js" defer></script>
+    <script src="main.js" type="module"></script>
 
     <script>
         addEventListener("icecandidate", (event) => {
-            console.log("**********************************************");
         });
     </script>
 

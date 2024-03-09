@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Exclude JWT token header from rewrite
+    RewriteCond %{HTTP:Authorization} ^(Bearer\s.+)$
+    RewriteRule ^ - [E=HTTP_AUTHORIZATION:%1]
+
+    # Redirect all requests to the Laravel front controller
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
